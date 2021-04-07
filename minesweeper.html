@@ -9,9 +9,9 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" />
-    <link rel="icon" href="files/vavrologominiwhite.png" />
-    <link rel="stylesheet" type="text/css" href="files/main.css" />
-    <link rel="stylesheet" href="files/minesweeper.css" />
+    <link rel="icon" href="files/images/vavrologominiwhite.png" />
+    <link rel="stylesheet" type="text/css" href="files/stylesheets/main.css" />
+    <link rel="stylesheet" href="files/stylesheets/minesweeper.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KLKTR1N9G6"></script>
     <script>
@@ -30,12 +30,12 @@
       <label for="showcheck" class="fa-bars show menubutton"></label>
       <input type="checkbox" id="showcheck" />
       <img
-        src="files/vavrologoblack.png"
+        src="files/images/vavrologoblack.png"
         alt="VAVRO"
         class="headerlogo hide"
         id="myID"
-        onmouseover="this.src='files/vavrologoaltblack.png'"
-        onmouseout="this.src='files/vavrologoblack.png'"
+        onmouseover="this.src='files/images/vavrologoaltblack.png'"
+        onmouseout="this.src='files/images/vavrologoblack.png'"
       />
       <ul>
         <li><a href="index.html">HOME</a></li>
@@ -48,24 +48,24 @@
     <section class="windowsDesktop">
       <div class="mineIcon">
         <a id="mineIcon">
-          <img src="files/Assets/icon.png" alt="Minesweeper" />
+          <img src="files/minesweeperAssets/icon.png" alt="Minesweeper" />
           <p>Minesweeper</p>
         </a>
       </div>
       <div class="mineIcon computer">
         <a id="computer">
-          <img src="files/Assets/computer.png" alt="My Computer" />
+          <img src="files/minesweeperAssets/computer.png" alt="My Computer" />
           <p>My Computer</p>
         </a>
       </div>
 
       <div class="bsod">
-        <img src="files/Assets/bsod.png" alt="bsod" />
+        <img src="files/minesweeperAssets/bsod.png" alt="bsod" />
       </div>
 
       <div class="modal window" id="modalWindow">
         <div class="windowHeader">
-          <img src="files/Assets/iconHeader.png" alt="Minesweeper Icon" height="20" width="20" />
+          <img src="files/minesweeperAssets/iconHeader.png" alt="Minesweeper Icon" height="20" width="20" />
           <p id="headerText"></p>
           <a class="close hide"></a>
         </div>
@@ -73,9 +73,9 @@
           <div class="cont">
             <div id="highscore">
               <div class="container">
-                <img alt="New record" src="files/Assets/newRecord.svg" />
+                <img alt="New record" src="files/minesweeperAssets/newRecord.svg" />
                 <h1>New Record!</h1>
-                <img alt="New record" src="files/Assets/newRecord.svg" />
+                <img alt="New record" src="files/minesweeperAssets/newRecord.svg" />
                 <p>Difficulty</p>
                 <p class="record" id="recordDif"></p>
                 <p>Time</p>
@@ -111,7 +111,7 @@
 
       <main class="window" id="minesweeper">
         <div id="header" class="windowHeader">
-          <img src="files/Assets/iconHeader.png" alt="Minesweeper Icon" height="20" width="20" />
+          <img src="files/minesweeperAssets/iconHeader.png" alt="Minesweeper Icon" height="20" width="20" />
           <p>Minesweeper</p>
           <a class="close hide"></a>
         </div>
@@ -209,7 +209,7 @@
 
       <footer>
         <a href="index.html" class="start">
-          <img src="files/Assets/start.png" alt="Start Icon" />
+          <img src="files/minesweeperAssets/start.png" alt="Start Icon" />
           <b>Start</b>
         </a>
         <div class="clock">
@@ -221,19 +221,20 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <img src="files/Assets/LCD/DL.png" alt="DL SEGMENT" class="led" id="DL" width="4" height="13" />
-    <img src="files/Assets/LCD/DMB.png" alt="DMB SEGMENT" class="led" id="DMB" width="13" height="4" />
-    <img src="files/Assets/LCD/DMM.png" alt="DMM SEGMENT" class="led" id="DMM" />
-    <img src="files/Assets/LCD/DMT.png" alt="DMT SEGMENT" class="led" id="DMT" width="13" height="4" />
-    <img src="files/Assets/LCD/DR.png" alt="DR SEGMENT" class="led" id="DR" width="4" height="13" />
-    <img src="files/Assets/LCD/LL.png" alt="LL SEGMENT" class="led" id="LL" width="4" height="13" />
-    <img src="files/Assets/LCD/LMB.png" alt="LMB SEGMENT" class="led" id="LMB" width="13" height="4" />
-    <img src="files/Assets/LCD/LMM.png" alt="LMM SEGMENT" class="led" id="LMM" width="13" height="4" />
-    <img src="files/Assets/LCD/LMT.png" alt="LMT SEGMENT" class="led" id="LMT" width="13" height="4" />
-    <img src="files/Assets/LCD/LR.png" alt="LR SEGMENT" class="led" id="LR" width="4" height="13" />
+    <img src="files/minesweeperAssets/LCD/DL.png" alt="DL SEGMENT" class="led" id="DL" width="4" height="13" />
+    <img src="files/minesweeperAssets/LCD/DMB.png" alt="DMB SEGMENT" class="led" id="DMB" width="13" height="4" />
+    <img src="files/minesweeperAssets/LCD/DMM.png" alt="DMM SEGMENT" class="led" id="DMM" />
+    <img src="files/minesweeperAssets/LCD/DMT.png" alt="DMT SEGMENT" class="led" id="DMT" width="13" height="4" />
+    <img src="files/minesweeperAssets/LCD/DR.png" alt="DR SEGMENT" class="led" id="DR" width="4" height="13" />
+    <img src="files/minesweeperAssets/LCD/LL.png" alt="LL SEGMENT" class="led" id="LL" width="4" height="13" />
+    <img src="files/minesweeperAssets/LCD/LMB.png" alt="LMB SEGMENT" class="led" id="LMB" width="13" height="4" />
+    <img src="files/minesweeperAssets/LCD/LMM.png" alt="LMM SEGMENT" class="led" id="LMM" width="13" height="4" />
+    <img src="files/minesweeperAssets/LCD/LMT.png" alt="LMT SEGMENT" class="led" id="LMT" width="13" height="4" />
+    <img src="files/minesweeperAssets/LCD/LR.png" alt="LR SEGMENT" class="led" id="LR" width="4" height="13" />
 
-    <script async defer src="files/Game.js"></script>
-    <script async defer src="files/Service.js"></script>
-    <script async defer src="files/View.js"></script>
+    <script async defer src="files/javascripts/minesweeper/Game.js"></script>
+    <script async defer src="files/javascripts/minesweeper/Service.js"></script>
+    <script async defer src="files/javascripts/minesweeper/View.js"></script>
   </body>
 </html>
+javascripts/minesweeper/

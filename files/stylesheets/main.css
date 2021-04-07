@@ -177,7 +177,7 @@ section {
 .logosection {
   width: 100%;
   height: 100%;
-  background-image: url("../files/bg.jpg");
+  background-image: url("../files/images/bg.jpg");
   background: linear-gradient(327deg, #ff65c3, #00d0ff, #4bd036, #f3ef1f, #f31fa0);
   background-size: 1000% 1000%;
   position: relative;
@@ -204,7 +204,7 @@ section {
   background-position: center;
   transition: background-image 0.2s ease-in-out;
   background-repeat: no-repeat;
-  background-image: url(vavrologoaltwhite.png);
+  background-image: url(../images/vavrologoaltwhite.png);
 }
 
 .headerlogo {

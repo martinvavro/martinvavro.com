@@ -336,7 +336,7 @@ td {
   justify-self: end;
   margin-right: 4px;
   align-self: center;
-  background-image: url("Assets/close.svg");
+  background-image: url("../minesweeperAssets/close.svg");
   border-style: outset;
   border-width: 1px;
   background-size: 10px;
@@ -606,7 +606,7 @@ form input {
 }
 
 .sun {
-  background-image: url("Assets/sun/sun.svg");
+  background-image: url("../minesweeperAssets/sun/sun.svg");
   background-size: 30px;
   background-repeat: no-repeat;
   background-position: center;
@@ -621,19 +621,19 @@ form input {
 }
 
 .sunwon {
-  background-image: url("Assets/sun/sunwin.svg");
+  background-image: url("../minesweeperAssets/sun/sunwin.svg");
 }
 
 .sunlost {
-  background-image: url("Assets/sun/sunlost.svg");
+  background-image: url("../minesweeperAssets/sun/sunlost.svg");
 }
 
 .sunclick {
-  background-image: url("Assets/sun/sunclick.svg");
+  background-image: url("../minesweeperAssets/sun/sunclick.svg");
 }
 
 .sun:active {
-  background-image: url("Assets/sun/sunclick.svg");
+  background-image: url("../minesweeperAssets/sun/sunclick.svg");
   border-style: inset;
 }
 
@@ -673,7 +673,7 @@ form input {
 }
 
 .flag {
-  background-image: url("Assets/mine/flag.svg");
+  background-image: url("../minesweeperAssets/mine/flag.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   background-position: center;
@@ -681,7 +681,7 @@ form input {
 }
 
 .mine {
-  background-image: url("Assets/mine/mine.svg");
+  background-image: url("../minesweeperAssets/mine/mine.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   background-position: center;
@@ -689,7 +689,7 @@ form input {
 }
 
 .falseflag {
-  background-image: url("Assets/mine/falseflag.svg");
+  background-image: url("../minesweeperAssets/mine/falseflag.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   background-position: center;
@@ -729,21 +729,21 @@ form input {
 }
 
 #center {
-  background-image: url("Assets/center.svg");
+  background-image: url("../minesweeperAssets/center.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 #back {
-  background-image: url("Assets/back.svg");
+  background-image: url("../minesweeperAssets/back.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .backDisabled {
-  background-image: url("Assets/backDisabled.svg") !important;
+  background-image: url("../minesweeperAssets/backDisabled.svg") !important;
 }
 
 .mobButton:active {
