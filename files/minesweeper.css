@@ -1,0 +1,817 @@
+/*****************************/
+
+/*********** MAIN ************/
+
+/*****************************/
+
+html,
+body {
+  background-color: #008081;
+}
+
+.windowsDesktop {
+  background-color: #008081;
+  font-family: monospace;
+  height: 100vh;
+  display: flex;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0;
+  image-rendering: pixelated;
+}
+
+hr {
+  margin: 1px;
+}
+
+.section {
+  border-style: outset;
+  border-color: #eeeeee #ddd #ddd #eeeeee;
+  padding: 10px;
+}
+
+main {
+  margin: auto;
+  background-color: #c0c0c0;
+  width: max-content;
+  width: -moz-max-content;
+  width: -webkit-max-content;
+  width: -o-max-content;
+  height: max-content;
+  height: -moz-max-content;
+  height: -webkit-max-content;
+  height: -o-max-content;
+  text-align: center;
+  border-style: outset;
+  border-color: #eeeeee #ddd #ddd #eeeeee;
+  border-width: 1px;
+  padding: 2px;
+  z-index: 995;
+}
+
+.window {
+  position: absolute;
+  left: 50%;
+  top: 25%;
+}
+
+/*****************************/
+
+/******** START MENU *********/
+
+/*****************************/
+
+footer {
+  z-index: 989;
+  display: flex;
+  background-color: #c0c0c0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  border-top: outset;
+  padding-right: 250px;
+}
+
+.start {
+  display: flex;
+  font-family: inherit;
+  border-width: 2px;
+  border-style: outset;
+  text-decoration: none;
+  color: black;
+  margin: 2px;
+  border-color: #eeeeee #ddd #ddd #eeeeee;
+}
+
+.start img {
+  margin: 2px;
+  height: 17px;
+}
+
+.start b {
+  align-self: center;
+  margin-right: 2px;
+}
+
+.start:active {
+  border-style: inset;
+}
+
+.clock {
+  border-style: inset;
+  border-color: #ddd #eeeeee #eeeeee #ddd;
+  border-width: 2px;
+  margin-left: auto;
+  margin-right: 3px;
+  margin-bottom: 2px;
+}
+
+.clock p {
+  margin: 4px 10px 0 10px;
+}
+
+/*****************************/
+
+/*********** MODAL ***********/
+
+/*****************************/
+
+.modal {
+  display: none;
+  z-index: 999;
+  width: 301px;
+  color: black;
+  position: absolute;
+  border-style: outset;
+  border-color: #eeeeee #ddd #ddd #eeeeee;
+  border-width: 1px;
+  left: 37%;
+  top: 37%;
+  left: calc(50% - 151px);
+  top: calc(50% - 105px);
+}
+
+.cont {
+  border-style: outset;
+  border-color: #eeeeee #ddd #ddd #eeeeee;
+  padding: 10px;
+}
+
+.container {
+  border-style: inset;
+  border-color: #ddd #eeeeee #eeeeee #ddd;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto;
+}
+
+.container h1 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.container img {
+  margin: auto;
+  height: 30px;
+}
+
+.contentMine {
+  display: grid;
+  padding: 2px 2px;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  text-align: center;
+  background: #c0c0c0;
+}
+
+.contentMine p {
+  margin: auto;
+}
+
+.buttonWindow {
+  border-style: outset;
+  padding: 5px;
+  background-color: #c0c0c0;
+  color: black;
+  width: 100px;
+  margin: 10px;
+  margin-bottom: 0;
+  border-color: #eeeeee #ddd #ddd #eeeeee;
+}
+
+.buttonWindow:active {
+  border-style: inset;
+  border-color: #ddd #eeeeee #eeeeee #ddd;
+}
+
+.record {
+  border: inset;
+  padding: 5px;
+}
+
+.inline {
+  display: inline-flex;
+}
+
+#highscore {
+  display: none;
+}
+
+#highscores {
+  display: none;
+}
+
+tbody {
+  overflow: auto;
+}
+
+.tableContainer {
+  width: 266px;
+  overflow: auto;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+tr {
+  border-style: solid;
+  border-width: 1px;
+}
+
+th {
+  border-style: solid;
+  border-width: 1px;
+}
+
+td {
+  padding: 10px 5px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+/*****************************/
+
+/******** EASTER EGG *********/
+
+/*****************************/
+
+.bsod {
+  margin: 0;
+  background-color: #0000aa;
+  min-width: 100%;
+  min-height: 100vh;
+  display: none;
+  z-index: 999999;
+}
+
+.bsod img {
+  margin: auto;
+  text-align: center;
+}
+
+/*****************************/
+
+/******* DESKTOP ICON ********/
+
+/*****************************/
+
+.mineIcon {
+  position: absolute;
+  left: 255px;
+  top: 80px;
+  text-align: center;
+}
+
+.mineIcon img {
+  width: 32px;
+  height: 32px;
+}
+
+.computer {
+  top: 5px;
+}
+
+.mineIcon p {
+  margin: 0;
+  color: white;
+}
+
+.mineIcon a:active > p {
+  color: white;
+  border-style: dotted;
+  border-width: 1px;
+  background-color: darkblue;
+}
+
+.mineIcon a:active > img {
+  filter: brightness(0.3);
+  background-color: rgb(0, 0, 139);
+}
+
+/*****************************/
+
+/********** HEADER ***********/
+
+/*****************************/
+
+.windowHeader {
+  background-color: darkblue;
+  text-align: left;
+  color: white;
+  font-weight: bold;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 26px auto auto;
+}
+
+.windowHeader img {
+  margin: 1px 4px 1px 2px;
+  align-self: center;
+}
+
+.windowHeader p {
+  margin: 0;
+  align-self: center;
+  font-size: 12px;
+  cursor: default;
+}
+
+.windowHeader p:active {
+  cursor: move;
+}
+
+.windowHeader:active {
+  cursor: move;
+}
+
+.close {
+  justify-self: end;
+  margin-right: 4px;
+  align-self: center;
+  background-image: url("Assets/close.svg");
+  border-style: outset;
+  border-width: 1px;
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 12px;
+  width: 16px;
+  border-color: #eeeeee #ddd #ddd #eeeeee;
+  background-color: #c0c0c0;
+}
+
+.close:active {
+  border-style: inset;
+  border-color: #ddd #eeeeee #eeeeee #ddd;
+  cursor: pointer;
+}
+
+/*****************************/
+
+/********** NAVBAR ***********/
+
+/*****************************/
+
+nav {
+  font-family: inherit;
+  font-size: 12px;
+  color: black;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+  width: auto;
+}
+
+nav ul li a {
+  display: block;
+  color: black;
+  text-align: left;
+  text-decoration: none;
+  padding: 5px;
+}
+
+nav ul li a:active {
+  cursor: pointer;
+  background-color: darkblue;
+  color: white;
+}
+
+nav ul li a::first-letter {
+  text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color: #c0c0c0;
+}
+
+.dropdown:hover > #navGame {
+  background-color: darkblue;
+  color: white;
+}
+
+.dropdown:hover > .navGame {
+  background-color: darkblue;
+  color: white;
+}
+
+.dropdown:hover > .navHelp {
+  background-color: darkblue;
+  color: white;
+}
+
+nav:hover {
+  cursor: default;
+}
+
+.dropdown-content a:hover {
+  background-color: darkblue;
+  color: white;
+}
+
+.dropdown:active > .dropdown-content {
+  display: none;
+}
+
+.dropdown-content {
+  border-style: outset;
+  border-width: 1px;
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 4px 40px 4px 20px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/*****************************/
+
+/********** OPTIONS **********/
+
+/*****************************/
+
+.options {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 63px auto;
+  background-color: #c0c0c0;
+  margin: auto;
+  color: black;
+}
+
+.options label {
+  text-align: left;
+  align-self: center;
+}
+
+.options hr {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-bottom: 10px;
+}
+
+.options p {
+  margin: 0px 0 10px;
+  font-weight: bold;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.difficulty {
+  display: grid;
+  text-align: left;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-template-rows: auto auto;
+  grid-template-columns: 20px auto 20px auto;
+  margin-bottom: 10px;
+}
+
+.difficulty input {
+  margin: 0;
+  width: 20px;
+}
+
+.submit {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.submit input {
+  width: 60px;
+  margin: 0;
+}
+
+form input {
+  width: 50px;
+  font-family: monospace;
+  border-style: inset;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+#save {
+  border-style: outset;
+}
+
+#reset {
+  border-style: outset;
+}
+
+#save:active {
+  border-style: inset;
+}
+
+#reset:active {
+  border-style: inset;
+}
+
+/*****************************/
+
+/*********** GAME ************/
+
+/*****************************/
+
+.board {
+  width: min-content;
+  border-style: inset;
+  border-color: #ddd #eeeeee #eeeeee #ddd;
+  line-height: 0;
+  margin: auto;
+}
+
+.mineButton {
+  box-sizing: border-box;
+  display: block;
+  height: 22px;
+  width: 22px;
+  padding: 2px;
+  background-color: #c0c0c0;
+  border-style: outset;
+  border-width: 2px;
+  transition: all ease-in-out 0.5s;
+  cursor: pointer;
+  border-color: #eeeeee #ddd #ddd #eeeeee;
+}
+
+.mineButton:active {
+  transition: all ease-in-out 2s;
+  border-style: inset;
+  border-color: #ddd #eeeeee #eeeeee #ddd;
+}
+
+.empty {
+  background-color: #c0c0c0;
+  line-height: 17px;
+  text-align: center;
+  vertical-align: middle;
+  width: 22px;
+  height: 22px;
+  border-style: solid;
+  border-color: gray;
+  border-width: 1px 1px 0 0;
+  cursor: auto;
+  font-weight: 1000;
+  font-size: 15px;
+}
+
+.btnRow {
+  display: inline-flex;
+}
+
+.status {
+  display: flex;
+  border-style: inset;
+  border-color: #ddd #eeeeee #eeeeee #ddd;
+  margin-bottom: 10px;
+}
+
+.remaining {
+  margin: 5px;
+  background-color: #210000;
+  border-style: inset;
+  border-color: #ddd #eeeeee #eeeeee #ddd;
+}
+
+.time {
+  margin: 5px;
+  background-color: #210000;
+  border-style: inset;
+  border-color: #ddd #eeeeee #eeeeee #ddd;
+}
+
+.led {
+  display: none;
+}
+
+.sun {
+  background-image: url("Assets/sun/sun.svg");
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  margin: auto;
+  height: 34px;
+  width: 34px;
+  text-align: center;
+  border-style: outset;
+  border-color: #eeeeee #ddd #ddd #eeeeee;
+  display: block;
+}
+
+.sunwon {
+  background-image: url("Assets/sun/sunwin.svg");
+}
+
+.sunlost {
+  background-image: url("Assets/sun/sunlost.svg");
+}
+
+.sunclick {
+  background-image: url("Assets/sun/sunclick.svg");
+}
+
+.sun:active {
+  background-image: url("Assets/sun/sunclick.svg");
+  border-style: inset;
+}
+
+.num1 {
+  cursor: crosshair;
+  color: blue;
+}
+
+.num2 {
+  cursor: crosshair;
+  color: green;
+}
+
+.num3 {
+  cursor: crosshair;
+  color: red;
+}
+
+.num4 {
+  cursor: crosshair;
+  color: darkblue;
+}
+
+.num5 {
+  cursor: crosshair;
+  color: darkred;
+}
+
+.num6 {
+  cursor: crosshair;
+  color: darkcyan;
+}
+
+.num8 {
+  cursor: crosshair;
+  color: grey;
+}
+
+.flag {
+  background-image: url("Assets/mine/flag.svg");
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: none;
+}
+
+.mine {
+  background-image: url("Assets/mine/mine.svg");
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: none;
+}
+
+.falseflag {
+  background-image: url("Assets/mine/falseflag.svg");
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: none;
+}
+
+.deadly {
+  border-color: red;
+  background-color: red;
+  border-style: inset;
+  border-color: #ddd #eeeeee #eeeeee #ddd;
+}
+
+/*****************************/
+
+/******* MOBILE MENU *********/
+
+/*****************************/
+
+.mobileMenu {
+  margin-top: 10px;
+  display: flex;
+  border-style: inset;
+  border-color: #ddd #eeeeee #eeeeee #ddd;
+}
+
+.mobButton {
+  height: 25px;
+  width: 25px;
+  margin: 5px;
+  border-style: outset;
+  border-color: #eeeeee #ddd #ddd #eeeeee;
+}
+
+#toggle {
+  margin: auto;
+}
+
+#center {
+  background-image: url("Assets/center.svg");
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#back {
+  background-image: url("Assets/back.svg");
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.backDisabled {
+  background-image: url("Assets/backDisabled.svg") !important;
+}
+
+.mobButton:active {
+  border-style: inset;
+}
+
+.backDisabled:active {
+  border: outset;
+  border-color: #eeeeee #ddd #ddd #eeeeee;
+}
+
+/*****************************/
+
+/*********** DOCS ************/
+
+/*****************************/
+
+.text {
+  max-width: 500px;
+  color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.disabled {
+  color: grey;
+}
+
+.disabled:active {
+  border: outset;
+  border-color: #eeeeee #ddd #ddd #eeeeee;
+}
+
+h3 {
+  float: none;
+}
+
+h5 {
+  float: none;
+}
+
+@media only screen and (max-width: 750px) {
+  #docs {
+    min-width: 70vw;
+  }
+
+  footer {
+    padding-right: 0;
+  }
+
+  .mineIcon {
+    left: 5px;
+    top: 130px;
+  }
+
+  .computer {
+    top: 55px;
+  }
+
+  .mobileMenu {
+    display: flex !important;
+  }
+}

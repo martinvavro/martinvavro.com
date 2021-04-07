@@ -1,0 +1,8 @@
+CACHE MANIFEST
+Game.js
+View.js
+minesweeper.css
+../minesweeper.html
+
+FALLBACK:
+Assets/close.svg

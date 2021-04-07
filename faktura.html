@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KLKTR1N9G6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-KLKTR1N9G6");
+    </script>
+  </head>
+  <body>
+    <style type="text/css">
+      body {
+        font-family: "Raleway", sans-serif;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+      }
+
+      .demo-droppable {
+        background: #08c;
+        color: #fff;
+        padding: 100px 0;
+        text-align: center;
+        cursor: pointer;
+        margin: 50px;
+      }
+
+      .demo-droppable.dragover {
+        background: #00cc71;
+      }
+
+      .eshop {
+        text-align: center;
+        margin: 50px;
+        border: 1px black solid;
+        padding: 40px;
+      }
+
+      .eshop radio {
+        margin: 10px;
+        font-weight: bold;
+      }
+
+      .output {
+        text-align: center;
+        margin: 50px;
+        border: 1px black solid;
+        padding: 40px;
+      }
+
+      .faktura {
+        width: 70%;
+        margin-top: 60px;
+        max-width: 1150px;
+        border: 1px black solid;
+      }
+
+      .faktura h2 {
+        margin: 20px;
+      }
+    </style>
+    <div class="faktura">
+      <h2>Výber eshopu</h2>
+      <div class="eshop">
+        <input type="radio" name="eshop" id="k" value="k" checked />
+        <label for="k">MadeByKristina</label>
+        <input type="radio" name="eshop" id="e" value="e" />
+        <label for="e">Needo</label>
+      </div>
+      <h2>Nahratie MoneyS3 exportu</h2>
+      <div class="demo-droppable">
+        <p>Sem presuň súbory alebo po kliknutí nájdi</p>
+      </div>
+      <h2>Výstup pre kontrolu</h2>
+      <div class="output">
+        <p id="demo"></p>
+      </div>
+      <br />
+    </div>
+    <script src="files/faktura2.js"></script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="files/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" />
+    <link rel="icon" href="files/vavrologominiwhite.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Martin Vavro</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KLKTR1N9G6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-KLKTR1N9G6");
+    </script>
+  </head>
+
+  <body>
+    <header class="menuHeader">
+      <label for="showcheck" class="fa-bars show menubutton"></label>
+      <input type="checkbox" id="showcheck" />
+      <img
+        src="files/vavrologoblack.png"
+        alt="VAVRO"
+        class="headerlogo hideLogo"
+        id="myID"
+        onmouseover="this.src='files/vavrologoaltblack.png'"
+        onmouseout="this.src='files/vavrologoblack.png'"
+      />
+      <ul>
+        <li><a href="index.html" id="active">HOME</a></li>
+        <li><a href="cv.html" class="menuItem">CV</a></li>
+        <li><a href="minesweeper.html" class="menuItem">MINESWEEPER</a></li>
+        <li><a href="photography.html" class="menuItem">PHOTOGRAPHY</a></li>
+        <li><a href="#contact" class="menuItem">CONTACT</a></li>
+      </ul>
+    </header>
+    <section class="main">
+      <div class="logosection">
+        <!-- onmouseover="this.src='files/vavrologoaltwhite.png'" onmouseout="this.src='files/vavrologowhite.png'" -->
+        <img src="files/vavrologowhite.png" alt="VAVRO" class="vavrologo" />
+        <a href="#about">
+          <div class="triangle-down button"></div>
+        </a>
+      </div>
+    </section>
+    <section class="full-height" id="about">
+      <div class="centered-div">
+        <h2>Hello, my name is Martin and I can do stuff.</h2>
+        <a href="minesweeper.html">I like programming</a>
+        <a href="photography.html">and I like photography</a>
+      </div>
+    </section>
+    <footer class="footer" id="contact">
+      <div class="footerchild">
+        <h4>CONTACT</h4>
+        <div class="icons">
+          <a href="https://www.linkedin.com/in/martin-vavro-4841a384/" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/vavromartin/" target="_blank"><i class="fa fa-facebook-official"></i></a>
+          <a href="https://www.instagram.com/martinvavro/" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+        <p>
+          <i class="fa fa-envelope left"></i>
+          <a href="mailto:mail@martinvavro.com"> mail@martinvavro.com </a>
+        </p>
+        <p class="credits">created by Martin Vavro 2021</p>
+      </div>
+    </footer>
+  </body>
+
+  <script>
+    myID = document.getElementById("myID");
+    vavrologo = document.querySelector(".vavrologo");
+
+    function isInViewport(el) {
+      const rect = el.getBoundingClientRect();
+      return (
+        rect.top + el.height >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom - el.height <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+
+    var myScrollFunc = function () {
+      if (isInViewport(vavrologo)) {
+        myID.className = "headerlogo hideLogo";
+      } else {
+        myID.className = "headerlogo";
+      }
+    };
+
+    window.addEventListener("scroll", myScrollFunc);
+  </script>
+</html>
