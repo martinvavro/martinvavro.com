@@ -9,6 +9,10 @@ body {
   background-color: #008081;
 }
 
+* {
+  box-sizing: content-box;
+}
+
 .windowsDesktop {
   background-color: #008081;
   font-family: monospace;
@@ -106,7 +110,7 @@ footer {
   border-color: #ddd #eeeeee #eeeeee #ddd;
   border-width: 2px;
   margin-left: auto;
-  margin-right: 3px;
+  margin-right: 253px;
   margin-bottom: 2px;
 }
 
@@ -804,14 +808,23 @@ h5 {
 
   .mineIcon {
     left: 5px;
-    top: 130px;
+    top: 140px;
   }
 
   .computer {
-    top: 55px;
+    top: 65px;
+  }
+
+  .clock {
+    margin-right: 3px;
   }
 
   .mobileMenu {
     display: flex !important;
+  }
+
+  .window {
+    left: 50%;
+    transform: translate(-50%, 0);
   }
 }
