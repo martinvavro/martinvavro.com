@@ -8,10 +8,6 @@ body {
   position: absolute;
 }
 
-.body {
-  margin-left: 250px;
-}
-
 #showcheck {
   position: absolute;
   top: -9999px;
@@ -817,8 +813,8 @@ body {
     background-color: white;
   }
 
-  .content {
-    margin-top: 25%;
+  section {
+    margin-top: 60px;
   }
 
   .about p {

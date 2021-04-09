@@ -1,0 +1,149 @@
+body,
+html {
+  background: #efefef;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+
+.faktura div {
+  height: 120px;
+  margin: 50px 30px;
+}
+
+.faktura div .radios {
+  height: auto;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+}
+
+.btn {
+  border: 1px solid black;
+  background: lightgrey;
+  color: grey;
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  width: 45%;
+  transition: background 600ms ease, color 600ms ease;
+}
+
+input[type="radio"].toggle {
+  display: none;
+}
+input[type="radio"].toggle + label {
+  cursor: pointer;
+  min-width: 60px;
+}
+input[type="radio"].toggle + label:hover {
+  background: mediumseagreen;
+  color: green;
+}
+input[type="radio"].toggle + label:after {
+  background: steelblue;
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: left 200ms cubic-bezier(0.77, 0, 0.175, 1);
+  width: 100%;
+  z-index: -1;
+}
+input[type="radio"].toggle.toggle-left + label {
+  border-right: 0;
+}
+input[type="radio"].toggle.toggle-left + label:after {
+  left: 100%;
+}
+input[type="radio"].toggle.toggle-right + label {
+  margin-left: -10px;
+  border-left: 0;
+}
+input[type="radio"].toggle.toggle-right + label:after {
+  left: -100%;
+}
+input[type="radio"].toggle:checked + label {
+  cursor: default;
+  color: #fff;
+  background-color: steelblue;
+  border-color: black;
+  text-decoration: underline;
+  transition: color 200ms;
+}
+input[type="radio"].toggle:checked + label:after {
+  left: 0;
+}
+
+.body {
+  font-family: monospace;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  background-color: aliceblue;
+}
+
+.demo-droppable {
+  background: steelblue;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  padding: 30px 0;
+  border: grey 5px outset;
+}
+
+.demo-droppable:hover {
+  border: grey 5px inset;
+}
+.demo-droppable.dragover {
+  border: grey 5px inset;
+  background: #00cc71;
+}
+
+.eshop {
+  text-align: center;
+  border: 1px black solid;
+  padding: 40px 20px;
+  background: lemonchiffon;
+  box-shadow: grey 5px 5px;
+}
+
+.eshop radio {
+  margin: 10px;
+  font-weight: bold;
+}
+
+.output {
+  text-align: center;
+  border: 1px black solid;
+  overflow: scroll;
+  background: white;
+  font-family: monospace;
+  white-space: nowrap;
+  box-shadow: grey 5px 5px;
+}
+
+.faktura {
+  width: 70%;
+  max-width: 700px;
+  background-color: lightsteelblue;
+  box-shadow: grey 5px 5px;
+  border: 1px black solid;
+  margin: 5vh 0;
+}
+
+.faktura h2 {
+  margin: 20px;
+}
+
+.output > br:first-of-type {
+  display: none;
+}
+
+#demo {
+  display: none;
+}

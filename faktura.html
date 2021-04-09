@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title></title>
+    <link rel="stylesheet" type="text/css" href="files/stylesheets/main.css" />
+    <link rel="stylesheet" type="text/css" href="files/stylesheets/faktura.css" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" />
+    <link rel="icon" href="files/images/vavrologominiwhite.png" />
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="css/style.css" rel="stylesheet" />
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Martin Vavro - Faktura</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KLKTR1N9G6"></script>
     <script>
@@ -18,75 +22,63 @@
     </script>
   </head>
   <body>
-    <style type="text/css">
-      body {
-        font-family: "Raleway", sans-serif;
-        display: grid;
-        align-items: center;
-        justify-items: center;
-      }
+    <header class="menuHeader">
+      <label for="showcheck" class="fa-bars show menubutton"></label>
+      <input type="checkbox" id="showcheck" />
+      <img
+        src="files/images/vavrologoblack.png"
+        alt="VAVRO"
+        class="headerlogo hide"
+        id="myID"
+        onmouseover="this.src='files/images/vavrologoaltblack.png'"
+        onmouseout="this.src='files/images/vavrologoblack.png'"
+      />
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="cv.html" class="menuItem">CV</a></li>
+        <li><a href="minesweeper.html" class="menuItem">MINESWEEPER</a></li>
+        <li><a href="faktura.html" class="menuItem" id="active">FAKTURA</a></li>
+        <li><a href="#contact" class="menuItem">CONTACT</a></li>
+      </ul>
+    </header>
+    <section class="body">
+      <div class="faktura">
+        <h2>Výber eshopu</h2>
+        <div class="eshop">
+          <div class="radios">
+            <input type="radio" name="eshop" id="k" value="k" class="toggle toggle-left" checked />
+            <label for="k" class="btn">MadeByKristina</label>
+            <input type="radio" name="eshop" id="e" value="e" class="toggle toggle-right" />
+            <label for="e" class="btn">Needo</label>
+          </div>
+        </div>
 
-      .demo-droppable {
-        background: #08c;
-        color: #fff;
-        padding: 100px 0;
-        text-align: center;
-        cursor: pointer;
-        margin: 50px;
-      }
-
-      .demo-droppable.dragover {
-        background: #00cc71;
-      }
-
-      .eshop {
-        text-align: center;
-        margin: 50px;
-        border: 1px black solid;
-        padding: 40px;
-      }
-
-      .eshop radio {
-        margin: 10px;
-        font-weight: bold;
-      }
-
-      .output {
-        text-align: center;
-        margin: 50px;
-        border: 1px black solid;
-        padding: 40px;
-      }
-
-      .faktura {
-        width: 70%;
-        margin-top: 60px;
-        max-width: 1150px;
-        border: 1px black solid;
-      }
-
-      .faktura h2 {
-        margin: 20px;
-      }
-    </style>
-    <div class="faktura">
-      <h2>Výber eshopu</h2>
-      <div class="eshop">
-        <input type="radio" name="eshop" id="k" value="k" checked />
-        <label for="k">MadeByKristina</label>
-        <input type="radio" name="eshop" id="e" value="e" />
-        <label for="e">Needo</label>
+        <h2>Nahratie MoneyS3 exportu</h2>
+        <div class="demo-droppable">
+          <p>Sem presuň súbory alebo po kliknutí nájdi</p>
+        </div>
+        <h2>Výstup pre kontrolu</h2>
+        <div class="output">
+          <p id="demo"></p>
+        </div>
+        <br />
       </div>
-      <h2>Nahratie MoneyS3 exportu</h2>
-      <div class="demo-droppable">
-        <p>Sem presuň súbory alebo po kliknutí nájdi</p>
+    </section>
+    <footer class="footer" id="contact">
+      <div class="footerchild">
+        <h4>CONTACT</h4>
+        <div class="icons">
+          <a href="https://www.linkedin.com/in/martin-vavro-4841a384/" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/vavromartin/" target="_blank"><i class="fa fa-facebook-official"></i></a>
+          <a href="https://www.instagram.com/martinvavro/" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+        <p>
+          <i class="fa fa-envelope left"></i>
+          <a href="mailto:mail@martinvavro.com"> mail@martinvavro.com </a>
+        </p>
+        <p class="credits">created by Martin Vavro 2021</p>
       </div>
-      <h2>Výstup pre kontrolu</h2>
-      <div class="output">
-        <p id="demo"></p>
-      </div>
-      <br />
-    </div>
-    <script src="files/faktura2.js"></script>
+    </footer>
+    <script src="files/javascripts/faktura2.js"></script>
   </body>
 </html>
