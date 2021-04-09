@@ -118,6 +118,10 @@ section {
   padding-left: 250px;
 }
 
+.cvsection {
+  height: auto;
+}
+
 .button {
   margin: 3% 0;
   width: 125px;
@@ -831,5 +835,9 @@ body {
 
   h1 {
     font-size: 2em;
+  }
+
+  section {
+    height: auto;
   }
 }

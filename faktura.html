@@ -41,27 +41,32 @@
         <li><a href="#contact" class="menuItem">CONTACT</a></li>
       </ul>
     </header>
-    <section class="body">
-      <div class="faktura">
-        <h2>Výber eshopu</h2>
-        <div class="eshop">
-          <div class="radios">
-            <input type="radio" name="eshop" id="k" value="k" class="toggle toggle-left" checked />
-            <label for="k" class="btn">MadeByKristina</label>
-            <input type="radio" name="eshop" id="e" value="e" class="toggle toggle-right" />
-            <label for="e" class="btn">Needo</label>
+    <section class="body" id="background">
+      <div class="flex-center">
+        <div class="faktura">
+          <h2>Výber eshopu</h2>
+          <div class="eshop">
+            <div class="radios">
+              <input type="radio" name="eshop" id="k" value="k" class="toggle toggle-left" checked />
+              <label for="k" class="btn">MadeByKristina</label>
+              <input type="radio" name="eshop" id="e" value="e" class="toggle toggle-right" />
+              <label for="e" class="btn">Needo</label>
+            </div>
           </div>
-        </div>
 
-        <h2>Nahratie MoneyS3 exportu</h2>
-        <div class="demo-droppable">
-          <p>Sem presuň súbory alebo po kliknutí nájdi</p>
+          <h2>Nahratie MoneyS3 exportu</h2>
+          <div class="demo-droppable">
+            <p>Sem presuň súbory alebo po kliknutí nájdi</p>
+          </div>
+          <h2>Výstup pre kontrolu</h2>
+          <div class="output">
+            <p id="demo"></p>
+          </div>
+          <br />
         </div>
-        <h2>Výstup pre kontrolu</h2>
-        <div class="output">
-          <p id="demo"></p>
-        </div>
-        <br />
+      </div>
+      <div class="flex-bottom">
+        <p id="logo">Faktura 1.2</p>
       </div>
     </section>
     <footer class="footer" id="contact">
@@ -79,6 +84,6 @@
         <p class="credits">created by Martin Vavro 2021</p>
       </div>
     </footer>
-    <script src="files/javascripts/faktura2.js"></script>
+    <script src="files/javascripts/faktura.js"></script>
   </body>
 </html>

@@ -39,8 +39,8 @@ input[type="radio"].toggle + label {
   min-width: 60px;
 }
 input[type="radio"].toggle + label:hover {
-  background: mediumseagreen;
-  color: green;
+  background: lightskyblue;
+  color: darkblue;
 }
 input[type="radio"].toggle + label:after {
   background: steelblue;
@@ -79,11 +79,6 @@ input[type="radio"].toggle:checked + label:after {
 
 .body {
   font-family: monospace;
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  align-content: center;
-  justify-content: center;
   background-color: aliceblue;
 }
 
@@ -134,6 +129,8 @@ input[type="radio"].toggle:checked + label:after {
   box-shadow: grey 5px 5px;
   border: 1px black solid;
   margin: 5vh 0;
+  z-index: 1;
+  justify-content: center;
 }
 
 .faktura h2 {
@@ -146,4 +143,26 @@ input[type="radio"].toggle:checked + label:after {
 
 #demo {
   display: none;
+}
+
+#logo {
+  color: #dcefff;
+  font-size: 11vw;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+  order: 1;
+  flex: 0 1 auto;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.flex-bottom {
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
 }
