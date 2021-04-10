@@ -330,6 +330,7 @@ section {
 .credits {
   font-size: 8pt;
   color: #777;
+  margin-bottom: 0;
 }
 
 .animated {
@@ -786,7 +787,8 @@ body {
   .menuHeader {
     width: 100%;
     height: auto;
-    justify-content: end;
+    justify-content: flex-start;
+    z-index: 999;
   }
 
   .headerlogo {

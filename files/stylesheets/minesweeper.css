@@ -14,6 +14,7 @@ body {
 }
 
 .windowsDesktop {
+  cursor: url(../minesweeperAssets/cursors/arrow.cur), auto;
   background-color: #008081;
   font-family: monospace;
   height: 100vh;
@@ -26,6 +27,18 @@ body {
   user-select: none;
   margin: 0;
   image-rendering: pixelated;
+}
+
+.windowsDesktop a {
+  cursor: url(../minesweeperAssets/cursors/pointer.cur), pointer;
+}
+
+.windowsDesktop input {
+  cursor: url(../minesweeperAssets/cursors/pointer.cur), pointer;
+}
+
+.windowsDesktop a.mineButton {
+  cursor: url(../minesweeperAssets/cursors/arrow.cur), default;
 }
 
 hr {
@@ -314,6 +327,7 @@ td {
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: 26px auto auto;
+  touch-action: none;
 }
 
 .windowHeader img {
@@ -325,15 +339,15 @@ td {
   margin: 0;
   align-self: center;
   font-size: 12px;
-  cursor: default;
+  cursor: url(../minesweeperAssets/cursors/arrow.cur), auto;
 }
 
 .windowHeader p:active {
-  cursor: move;
+  cursor: url(../minesweeperAssets/cursors/move.cur), move;
 }
 
 .windowHeader:active {
-  cursor: move;
+  cursor: url(../minesweeperAssets/cursors/move.cur), move;
 }
 
 .close {
@@ -355,7 +369,7 @@ td {
 .close:active {
   border-style: inset;
   border-color: #ddd #eeeeee #eeeeee #ddd;
-  cursor: pointer;
+  cursor: url(../minesweeperAssets/cursors/pointer.cur), pointer;
 }
 
 /*****************************/
@@ -391,7 +405,7 @@ nav ul li a {
 }
 
 nav ul li a:active {
-  cursor: pointer;
+  cursor: url(../minesweeperAssets/cursors/pointer.cur), pointer;
   background-color: darkblue;
   color: white;
 }
@@ -421,7 +435,7 @@ nav ul li a::first-letter {
 }
 
 nav:hover {
-  cursor: default;
+  cursor: url(../minesweeperAssets/cursors/arrow.cur), auto;
 }
 
 .dropdown-content a:hover {
@@ -554,13 +568,11 @@ form input {
   background-color: #c0c0c0;
   border-style: outset;
   border-width: 2px;
-  transition: all ease-in-out 0.5s;
-  cursor: pointer;
+  cursor: url(../minesweeperAssets/cursors/pointer.cur), pointer;
   border-color: #eeeeee #ddd #ddd #eeeeee;
 }
 
 .mineButton:active {
-  transition: all ease-in-out 2s;
   border-style: inset;
   border-color: #ddd #eeeeee #eeeeee #ddd;
 }
@@ -575,7 +587,7 @@ form input {
   border-style: solid;
   border-color: gray;
   border-width: 1px 1px 0 0;
-  cursor: auto;
+  cursor: url(../minesweeperAssets/cursors/arrow.cur), auto;
   font-weight: 1000;
   font-size: 15px;
 }
@@ -642,37 +654,30 @@ form input {
 }
 
 .num1 {
-  cursor: crosshair;
   color: blue;
 }
 
 .num2 {
-  cursor: crosshair;
   color: green;
 }
 
 .num3 {
-  cursor: crosshair;
   color: red;
 }
 
 .num4 {
-  cursor: crosshair;
   color: darkblue;
 }
 
 .num5 {
-  cursor: crosshair;
   color: darkred;
 }
 
 .num6 {
-  cursor: crosshair;
   color: darkcyan;
 }
 
 .num8 {
-  cursor: crosshair;
   color: grey;
 }
 

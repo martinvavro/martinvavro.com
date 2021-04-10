@@ -74,28 +74,21 @@ class View {
     // Dragable windows
 
     // Hide-show window
-    document.querySelectorAll(".hide").forEach((x) => x.addEventListener("mousedown", (x) => this.hide(x.target), false));
-    document.querySelectorAll(".hide").forEach((x) => x.addEventListener("touchstart", (x) => this.hide(x.target), { passive: true }));
+    document.querySelectorAll(".hide").forEach((x) => x.addEventListener("pointerdown", (x) => this.hide(x.target), false));
     document.querySelector("#mineIcon").addEventListener("dblclick", () => this.showInMain(this.sectionGame), false);
     document.querySelector("#computer").addEventListener("dblclick", () => this.easterEggShow(), false);
-    document.querySelector("#save").addEventListener("mousedown", () => this.showInMain(this.sectionGame), false);
-    document.querySelector("#new").addEventListener("mousedown", () => this.showInMain(this.sectionGame), false);
+    document.querySelector("#save").addEventListener("pointerdown", () => this.showInMain(this.sectionGame), false);
     // Navbar functionality
-    document.querySelector("#menuOptions").addEventListener("mousedown", () => this.showInMain(this.sectionOptions), false);
-    document.querySelector("#menuOptions").addEventListener("touchstart", () => this.showInMain(this.sectionOptions), { passive: true });
-    document.querySelectorAll(".menuScores").forEach((x) => x.addEventListener("mousedown", () => this.showHighScores(), false));
-    document.querySelectorAll(".menuScores").forEach((x) => x.addEventListener("touchstart", () => this.showHighScores(), { passive: true }));
-    document.querySelectorAll("#clearStorage").forEach((x) => x.addEventListener("mousedown", () => this.clearLocalStorageScores(), false));
-    document.querySelectorAll("#clearStorage").forEach((x) => x.addEventListener("touchstart", () => this.clearLocalStorageScores(), { passive: true }));
-    document.querySelector("#menuDocs").addEventListener("mousedown", (x) => this.pagination(x.target), false);
-    document.querySelector("#menuDocs").addEventListener("touchstart", (x) => this.pagination(x.target), { passive: true });
-    document.querySelector("#menuHelp").addEventListener("mousedown", (x) => this.pagination(x.target), false);
-    document.querySelector("#menuHelp").addEventListener("touchstart", (x) => this.pagination(x.target), { passive: true });
+    document.querySelector("#menuOptions").addEventListener("pointerdown", () => this.showInMain(this.sectionOptions), false);
+    document.querySelectorAll(".menuScores").forEach((x) => x.addEventListener("pointerdown", () => this.showHighScores(), false));
+    document.querySelectorAll("#clearStorage").forEach((x) => x.addEventListener("pointerdown", () => this.clearLocalStorageScores(), false));
+    document.querySelector("#menuDocs").addEventListener("pointerdown", (x) => this.pagination(x.target), false);
+    document.querySelector("#menuHelp").addEventListener("pointerdown", (x) => this.pagination(x.target), false);
     // Center window
-    document.querySelector("#center").addEventListener("mousedown", this.centerMain.bind(this), false);
+    document.querySelector("#center").addEventListener("pointerdown", this.centerMain.bind(this), false);
     // history
-    document.querySelector("#next").addEventListener("click", () => this.gotoPage(parseInt(document.querySelector(".hidden").value) + 1));
-    document.querySelector("#previous").addEventListener("click", () => this.gotoPage(parseInt(document.querySelector(".hidden").value) - 1));
+    document.querySelector("#next").addEventListener("pointerdown", () => this.gotoPage(parseInt(document.querySelector(".hidden").value) + 1));
+    document.querySelector("#previous").addEventListener("pointerdown", () => this.gotoPage(parseInt(document.querySelector(".hidden").value) - 1));
     window.addEventListener("popstate", (e) => {
       if (e.state == 0) this.showInMain(this.sectionGame, true);
       if (e.state == 1) this.showInMain(this.sectionOptions, true);
@@ -243,17 +236,19 @@ class View {
 
   easterEggClose() {
     this.sectionBsod.style.display = "none";
-    document.querySelector("body").style.cursor = "auto";
+    document.querySelector(".windowsDesktop").style.cursor = "url(files/minesweeperAssets/cursors/arrow.cur), auto";
+    document.querySelector("#computer").style = "";
     this.showInMain(this.sectionGame);
   }
 
   easterEggShow() {
-    document.querySelector("body").style.cursor = "wait";
+    document.querySelector("#computer").style.cursor = "url(files/minesweeperAssets/cursors/wait.cur), wait";
+    document.querySelector(".windowsDesktop").style.cursor = "url(files/minesweeperAssets/cursors/wait.cur), wait";
     setTimeout(() => {
       this.sectionBsod.style.display = "flex";
       this.hide(this.sectionGame);
       this.sectionBsod.addEventListener("mousedown", () => this.easterEggClose(), false);
-      document.querySelector("body").style.cursor = "none";
+      document.querySelector(".windowsDesktop").style.cursor = "none";
     }, 1000);
   }
 
