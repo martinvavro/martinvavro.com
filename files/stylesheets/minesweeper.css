@@ -14,7 +14,7 @@ body {
 }
 
 .windowsDesktop {
-  cursor: url(../minesweeperAssets/cursors/arrow.cur), auto;
+  cursor: url(../minesweeperAssets/cursors/arrow.ico), auto;
   background-color: #008081;
   font-family: monospace;
   height: 100vh;
@@ -30,15 +30,15 @@ body {
 }
 
 .windowsDesktop a {
-  cursor: url(../minesweeperAssets/cursors/pointer.cur), pointer;
+  cursor: url(../minesweeperAssets/cursors/pointer.ico), pointer;
 }
 
 .windowsDesktop input {
-  cursor: url(../minesweeperAssets/cursors/pointer.cur), pointer;
+  cursor: url(../minesweeperAssets/cursors/pointer.ico), pointer;
 }
 
 .windowsDesktop a.mineButton {
-  cursor: url(../minesweeperAssets/cursors/arrow.cur), default;
+  cursor: url(../minesweeperAssets/cursors/arrow.ico), default;
 }
 
 hr {
@@ -339,15 +339,15 @@ td {
   margin: 0;
   align-self: center;
   font-size: 12px;
-  cursor: url(../minesweeperAssets/cursors/arrow.cur), auto;
+  cursor: url(../minesweeperAssets/cursors/arrow.ico), auto;
 }
 
 .windowHeader p:active {
-  cursor: url(../minesweeperAssets/cursors/move.cur), move;
+  cursor: url(../minesweeperAssets/cursors/move.ico), move;
 }
 
 .windowHeader:active {
-  cursor: url(../minesweeperAssets/cursors/move.cur), move;
+  cursor: url(../minesweeperAssets/cursors/move.ico), move;
 }
 
 .close {
@@ -369,7 +369,7 @@ td {
 .close:active {
   border-style: inset;
   border-color: #ddd #eeeeee #eeeeee #ddd;
-  cursor: url(../minesweeperAssets/cursors/pointer.cur), pointer;
+  cursor: url(../minesweeperAssets/cursors/pointer.ico), pointer;
 }
 
 /*****************************/
@@ -405,7 +405,7 @@ nav ul li a {
 }
 
 nav ul li a:active {
-  cursor: url(../minesweeperAssets/cursors/pointer.cur), pointer;
+  cursor: url(../minesweeperAssets/cursors/pointer.ico), pointer;
   background-color: darkblue;
   color: white;
 }
@@ -435,7 +435,7 @@ nav ul li a::first-letter {
 }
 
 nav:hover {
-  cursor: url(../minesweeperAssets/cursors/arrow.cur), auto;
+  cursor: url(../minesweeperAssets/cursors/arrow.ico), auto;
 }
 
 .dropdown-content a:hover {
@@ -568,7 +568,7 @@ form input {
   background-color: #c0c0c0;
   border-style: outset;
   border-width: 2px;
-  cursor: url(../minesweeperAssets/cursors/pointer.cur), pointer;
+  cursor: url(../minesweeperAssets/cursors/pointer.ico), pointer;
   border-color: #eeeeee #ddd #ddd #eeeeee;
 }
 
@@ -587,7 +587,7 @@ form input {
   border-style: solid;
   border-color: gray;
   border-width: 1px 1px 0 0;
-  cursor: url(../minesweeperAssets/cursors/arrow.cur), auto;
+  cursor: url(../minesweeperAssets/cursors/arrow.ico), auto;
   font-weight: 1000;
   font-size: 15px;
 }

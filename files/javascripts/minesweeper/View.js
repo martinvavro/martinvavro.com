@@ -236,14 +236,14 @@ class View {
 
   easterEggClose() {
     this.sectionBsod.style.display = "none";
-    document.querySelector(".windowsDesktop").style.cursor = "url(files/minesweeperAssets/cursors/arrow.cur), auto";
+    document.querySelector(".windowsDesktop").style.cursor = "url(files/minesweeperAssets/cursors/arrow.ico), auto";
     document.querySelector("#computer").style = "";
     this.showInMain(this.sectionGame);
   }
 
   easterEggShow() {
-    document.querySelector("#computer").style.cursor = "url(files/minesweeperAssets/cursors/wait.cur), wait";
-    document.querySelector(".windowsDesktop").style.cursor = "url(files/minesweeperAssets/cursors/wait.cur), wait";
+    document.querySelector("#computer").style.cursor = "url(files/minesweeperAssets/cursors/wait.ico), wait";
+    document.querySelector(".windowsDesktop").style.cursor = "url(files/minesweeperAssets/cursors/wait.ico), wait";
     setTimeout(() => {
       this.sectionBsod.style.display = "flex";
       this.hide(this.sectionGame);
