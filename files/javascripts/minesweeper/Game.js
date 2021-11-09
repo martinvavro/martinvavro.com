@@ -93,6 +93,7 @@ class GameState {
     document.getElementById("mines").value = parseInt(options[4]);
     document.getElementById("columns").value = parseInt(options[5]);
     document.getElementById("rows").value = parseInt(options[6]);
+    document.getElementById(options[7]).checked = true;
   }
 
   getFormTextInputs() {
