@@ -1,7 +1,7 @@
 html,
 body {
   margin: 0 0 0 0;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Red hat Mono", sans-serif;
   width: 100%;
   height: 100%;
   background-color: #333;
@@ -102,16 +102,21 @@ iframe {
 }
 
 #active {
-  color: #ff007f;
-  text-decoration: underline;
-  text-decoration-color: aquamarine;
   background-color: #eee;
+  border-top: black 1px solid;
+  border-bottom: black 1px solid;
 }
 
 .main {
   margin: auto;
   display: block;
   height: 100vh;
+}
+
+.mainsection {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
 }
 
 section {
@@ -178,13 +183,13 @@ section {
   width: 100%;
   height: 100%;
   background-image: url("../files/images/bg.jpg");
-  background: linear-gradient(327deg, #ff65c3, #00d0ff, #4bd036, #f3ef1f, #f31fa0);
+  background: linear-gradient(327deg, #7db690, #7cb8c5, #7db690,#bb76a0, #adac6b, #86caca);
   background-size: 1000% 1000%;
   position: relative;
-  -webkit-animation: backgroundanimate 8s ease infinite;
-  -moz-animation: backgroundanimate 8s ease infinite;
-  -o-animation: backgroundanimate 8s ease infinite;
-  animation: backgroundanimate 8s ease infinite;
+  -webkit-animation: backgroundanimate 12s ease infinite;
+  -moz-animation: backgroundanimate 12s ease infinite;
+  -o-animation: backgroundanimate 12s ease infinite;
+  animation: backgroundanimate 12s ease infinite;
 }
 
 .vavrologo {
@@ -418,7 +423,7 @@ section {
   font-size: 28px !important;
   width: 100%;
   display: block;
-  background-color: #eee;
+  background-color: white;
   color: #333;
   position: fixed;
   margin: auto;
@@ -456,6 +461,7 @@ section {
 .darkfooter .icons a:hover {
   color: #ff007f;
 }
+
 .image {
   width: 100%;
   height: 70vh;
@@ -509,25 +515,30 @@ section {
 
 .full-height {
   height: 100vh;
-  background-color: #333;
+  background: linear-gradient(to right, rgb(37, 196, 129), rgb(37, 183, 196));
   display: flex;
 }
 
 .centered-div {
   margin: auto;
-  text-align: center;
-  vertical-align: top;
-  justify-self: center;
-  align-self: center;
-  color: #eee;
+  color: #333;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
 }
 
 .centered-div h2 {
   font-weight: normal;
+  margin-top: auto;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
 }
 
 .centered-div a {
   color: inherit;
+  justify-self: center;
+  align-self: center;
 }
 
 .centered-div a:hover {
@@ -608,6 +619,7 @@ body {
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
+
 .curl-top-left:before {
   pointer-events: none;
   position: absolute;
@@ -627,6 +639,7 @@ body {
   -webkit-transition-property: width, height;
   transition-property: width, height;
 }
+
 .curl-top-left:hover:before,
 .curl-top-left:focus:before,
 .curl-top-left:active:before {
@@ -645,6 +658,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   position: relative;
 }
+
 .hvr-curl-top-right:before {
   pointer-events: none;
   position: absolute;
@@ -663,12 +677,28 @@ body {
   transition-property: width, height;
   z-index: 1000;
 }
+
 .hvr-curl-top-right:hover:before,
 .hvr-curl-top-right:focus:before,
 .hvr-curl-top-right:active:before {
   width: 70px;
   height: 90px;
 }
+
+.centered-div p {
+  width: 80%;
+  max-width: 1000px;
+  padding-top: 25px;
+  margin: auto;
+  font-size: small;
+  justify-self: flex-end;
+  align-self: flex-end;
+  margin-bottom: 25px;
+}
+
+.centered-div div {
+  margin: 0 auto;
+ }
 
 @page {
   size: A4;
@@ -691,7 +721,6 @@ body {
   0% {
     background-color: #333;
   }
-
   100% {
     background-color: #eee;
   }
@@ -701,7 +730,6 @@ body {
   from {
     opacity: 0;
   }
-
   to {
     opacity: 1;
   }
@@ -711,7 +739,6 @@ body {
   from {
     opacity: 0;
   }
-
   to {
     opacity: 1;
   }
@@ -728,6 +755,7 @@ body {
     background-position: 2% 0%;
   }
 }
+
 @-moz-keyframes backgroundanimate {
   0% {
     background-position: 2% 0%;
@@ -739,6 +767,7 @@ body {
     background-position: 2% 0%;
   }
 }
+
 @-o-keyframes backgroundanimate {
   0% {
     background-position: 2% 0%;
@@ -750,6 +779,7 @@ body {
     background-position: 2% 0%;
   }
 }
+
 @keyframes backgroundanimate {
   0% {
     background-position: 2% 0%;
@@ -766,7 +796,6 @@ body {
   .subpage {
     font-size: 1em;
   }
-
   h1 {
     font-size: 2em;
   }
@@ -781,64 +810,50 @@ body {
     margin: -200px 0;
     width: 100%;
     height: auto;
-    background-color: #eee;
+    background-color: white;
   }
-
   .menuHeader {
     width: 100%;
     height: auto;
     justify-content: flex-start;
     z-index: 999;
   }
-
   .headerlogo {
     display: none;
   }
-
   section {
     padding-left: 0;
   }
-
   .footer {
     padding-left: 0;
   }
-
   header ul li {
     float: none;
   }
-
   .show {
     display: block;
   }
-
-  #showcheck:checked ~ ul {
-    margin: 50px 0px;
+  #showcheck:checked~ul {
+    margin: 58px 0px;
   }
-
   #activehome {
     background-color: white;
   }
-
   section {
-    margin-top: 60px;
+    margin-top: 56px;
   }
-
   .about p {
     padding-left: 10px;
   }
-
   .about hr {
     width: 80%;
   }
-
   .subpage {
     font-size: 1.8vw;
   }
-
   h1 {
     font-size: 2em;
   }
-
   section {
     height: auto;
   }

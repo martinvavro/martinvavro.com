@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <link rel="stylesheet" type="text/css" href="files/stylesheets/main.css" />
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300&display=swap" rel="stylesheet">
     <link rel="icon" href="files/images/vavrologominiwhite.png" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, target-densitydpi=device-dpi" />
@@ -11,279 +14,291 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KLKTR1N9G6"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+        window.dataLayer = window.dataLayer || [];
 
-      gtag("config", "G-KLKTR1N9G6");
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-KLKTR1N9G6");
     </script>
-  </head>
+</head>
 
-  <body class="lightbg">
+<body class="lightbg">
     <header class="menuHeader">
-      <label for="showcheck" class="fa-bars show menubutton"></label>
-      <input type="checkbox" id="showcheck" />
-      <img
-        src="files/images/vavrologoblack.png"
-        alt="VAVRO"
-        class="headerlogo hide"
-        id="myID"
-        onmouseover="this.src='files/images/vavrologoaltblack.png'"
-        onmouseout="this.src='files/images/vavrologoblack.png'"
-      />
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="cv.html" class="menuItem" id="active">CV</a></li>
-        <li><a href="minesweeper.html" class="menuItem">MINESWEEPER</a></li>
-        <li><a href="photography.html" class="menuItem">PHOTOGRAPHY</a></li>
-        <li><a href="#contact" class="menuItem">CONTACT</a></li>
-      </ul>
+        <label for="showcheck" class="fa-bars show menubutton"></label>
+        <input type="checkbox" id="showcheck" />
+        <img src="files/images/vavrologoblack.png" alt="VAVRO" class="headerlogo hide" id="myID" onmouseover="this.src='files/images/vavrologoaltblack.png'" onmouseout="this.src='files/images/vavrologoblack.png'" />
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="minesweeper.html" class="menuItem">MINESWEEPER</a></li>
+            <li><a href="cv.html" class="menuItem" id="active">CV</a></li>
+            <!-- <li><a href="photography.html" class="menuItem">PHOTOGRAPHY</a></li> -->
+            <li><a href="#contact" class="menuItem">CONTACT</a></li>
+        </ul>
     </header>
     <section class="content cvsection">
-      <div class="pageWrapper">
-        <div class="page hvr-curl-top-right" id="firstPageCv">
-          <div class="CV subpage">
-            <div>
-              <h1>Martin Vavro</h1>
-              <h2>Personal Data</h2>
-              <hr />
-              <table>
-                <tr>
-                  <th class="tableBold">Nationality:</th>
-                  <td class="tableData"><i>Slovak</i></td>
-                </tr>
-                <tr>
-                  <th class="tableBold">Current location:</th>
-                  <td class="tableData"><i>Rome, Italy & Prague, Czechia</i></td>
-                </tr>
-                <tbody>
-                  <tr>
-                    <th class="tableBold">Phone:</th>
-                    <td class="tableData">+420 721 902 803</td>
-                  </tr>
-                  <tr>
-                    <th class="tableBold">Email:</th>
-                    <td class="tableData">
-                      <a href="mailto:martinvavro95@gmail.com">mail@martinvavro.com</a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div>
-              <h2>Work Experience</h2>
-              <hr />
-              <table class="workSegment">
-                <tbody>
-                  <tr>
-                    <th class="tableBoldExp dateDuration">2019 - Present</th>
-                    <td class="tableDataExp">Programmer | CS-Soft, Prague</td>
-                  </tr>
-                  <tr>
-                    <td class="tableBoldExp"></td>
-                    <td class="tableData">I work in C language on the FDPS system ESUP with ISO 12207 development standard.</td>
-                  </tr>
-                  <tr>
-                    <td class="tableBoldExp"></td>
-                    <td class="tableData">
-                      Since March 2020 I've progressed into Ruby on Rails full stack web development on a custom plugin for
-                      <a href="https://www.redmine.org/" target="_blank">Redmine</a>.
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+        <div class="pageWrapper">
+            <div class="page hvr-curl-top-right" id="firstPageCv">
+                <div class="CV subpage">
+                    <div>
+                        <h1>Martin Vavro</h1>
+                        <h2>Personal Data</h2>
+                        <hr />
+                        <table>
+                            <tr>
+                                <th class="tableBold">Nationality:</th>
+                                <td class="tableData"><i>Slovak</i></td>
+                            </tr>
+                            <tr>
+                                <th class="tableBold">Current location:</th>
+                                <td class="tableData"><i>Prague, Czechia</i></td>
+                            </tr>
+                            <tbody>
+                                <tr>
+                                    <th class="tableBold">Phone:</th>
+                                    <td class="tableData">+420 721 902 803</td>
+                                </tr>
+                                <tr>
+                                    <th class="tableBold">Email:</th>
+                                    <td class="tableData">
+                                        <a href="mailto:martinvavro95@gmail.com">mail@martinvavro.com</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <h2>Work Experience</h2>
+                        <hr />
+                        <table class="workSegment">
+                            <tbody>
+                                <tr>
+                                    <th class="tableBoldExp dateDuration">2021 - Present</th>
+                                    <td class="tableDataExp">Ruby on Rails Developer | Eman, Prague</td>
+                                </tr>
+                                <tr>
+                                    <td class="tableBoldExp"></td>
+                                    <td class="tableData">
+                                        I work in a team on a custom implementation of <a href="https://www.redmine.org/" target="_blank">Redmine</a>. It is an ongoing internal project for several years which I am happy to say I've recently became a part
+                                        of.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
 
-              <table class="workSegment">
-                <tbody>
-                  <tr>
-                    <th class="tableBoldExp dateDuration">2015 - 2017</th>
-                    <td class="tableDataExp">Graphic Designer | MyMedia, Prague</td>
-                  </tr>
-                  <tr>
-                    <td class="tableBoldExp"></td>
-                    <td class="tableData">Designed Banners, Products, and other various graphic works, both raster and vector.</td>
-                  </tr>
-                  <tr>
-                    <td class="tableBoldExp"></td>
-                    <td class="tableData">Automated repetitive tasks using Javascript and AutoHotkey.</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div>
-              <h2>Computer Skills</h2>
-              <hr />
-              <table>
-                <tbody>
-                  <tr>
-                    <th class="tableBold">Operating Systems:</th>
-                    <td class="tableData">GNU/Linux (Specifically Arch Linux, Ubuntu, Debian)</td>
-                  </tr>
-                  <tr>
-                    <th class="tableBold">Programming Languages:</th>
-                    <td class="tableData">Ruby, JavaScript (ES6), Bash, C, Python, Java</td>
-                  </tr>
-                  <tr>
-                    <th class="tableBold">Markup Languages:</th>
-                    <td class="tableData">HTML, XML, LaTeX</td>
-                  </tr>
-                  <tr>
-                    <th class="tableBold">Frameworks:</th>
-                    <td class="tableData">Ruby on Rails, Spring, Glib, Cunit, JQuery</td>
-                  </tr>
-                  <tr>
-                    <th class="tableBold">Design &amp; IDE Tools:</th>
-                    <td class="tableData">Vim, Visual Studio Code</td>
-                  </tr>
-                  <tr>
-                    <th class="tableBold">Others:</th>
-                    <td class="tableData">Mercurial, Git, Apache Httpd, PostgreSQL, MySQL, Sqlite, Oracle Database, CSS3</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-        <div class="page curl-top-left" id="secondPageCv">
-          <p style="page-break-after: always">&nbsp;</p>
-          <p style="page-break-before: always">&nbsp;</p>
-          <div class="CV subpage">
-            <div>
-              <h2>Education</h2>
-              <hr />
-              <table>
-                <tbody>
-                  <tr>
-                    <th class="tableBold">2017 - 2019</th>
-                    <td class="tableData">Software Engineering and Technologies | CTU FEL, Prague</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div>
-              <h2>Languages</h2>
-              <hr />
-              <table>
-                <tbody>
-                  <tr>
-                    <th class="tableBold">Czech/Slovak:</th>
-                    <td class="tableData">Native Language</td>
-                  </tr>
-                  <tr>
-                    <th class="tableBold">English:</th>
-                    <td class="tableData">Full Professional Proficiency</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div>
-              <h2>Personal projects</h2>
-              <hr />
-              <table class="workSegment">
-                <tbody>
-                  <tr>
-                    <th class="tableBoldExp dateDuration">2019</th>
-                    <td class="tableDataExp">Minesweeper</td>
-                  </tr>
-                  <tr>
-                    <td class="tableBoldExp"></td>
-                    <td class="tableData">Fully functional Minesweeper game with lots of features. Semestral project at university. Wrote my own game related algorithms.</td>
-                  </tr>
-                  <tr>
-                    <td class="tableBoldExp"></td>
-                    <td class="tableData">
-                      <a href="http://martinvavro.com/minesweeper.html" target="_blank">Link</a>
-                      /
-                      <a href="https://gitlab.com/martinvavro/javascript-minesweeper">Repository</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="tableBoldExp"></td>
-                    <td class="tableData">
-                      <i> Javascript ES6, HTML5, CSS</i>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                        <table class="workSegment">
+                            <tbody>
+                                <tr>
+                                    <th class="tableBoldExp dateDuration">2019 - 2021</th>
+                                    <td class="tableDataExp">Programmer | CS-Soft, Prague</td>
+                                </tr>
+                                <tr>
+                                    <td class="tableBoldExp"></td>
+                                    <td class="tableData">I worked in C language on the FDPS system ESUP with ISO 12207 development standard.</td>
+                                </tr>
+                                <tr>
+                                    <td class="tableBoldExp"></td>
+                                    <td class="tableData">
+                                        Later I've further progressed into Ruby on Rails full stack web development on a custom plugin for
+                                        <a href="https://www.redmine.org/" target="_blank">Redmine</a>.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
 
-              <table class="workSegment">
-                <tbody>
-                  <tr>
-                    <th class="tableBoldExp dateDuration">2019</th>
-                    <td class="tableDataExp">Accounting Export - Import</td>
-                  </tr>
-                  <tr>
-                    <td class="tableBoldExp"></td>
-                    <td class="tableData">
-                      SPA of invoices export conversion from MoneyS3 to STEREO (MS Dos accounting SW) compatible format. I was playing around with functional programming.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="tableBoldExp"></td>
-                    <td class="tableData">
-                      <a href="faktura.html" target="_blank">Link</a>
-                      /
-                      <a href="files/javascripts/faktura2.js" target="_blank">Code</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="tableBoldExp"></td>
-                    <td class="tableData">Javascript ES6</td>
-                  </tr>
-                </tbody>
-              </table>
+                        <table class="workSegment">
+                            <tbody>
+                                <tr>
+                                    <th class="tableBoldExp dateDuration">2015 - 2017</th>
+                                    <td class="tableDataExp">Graphic Designer | MyMedia, Prague</td>
+                                </tr>
+                                <tr>
+                                    <td class="tableBoldExp"></td>
+                                    <td class="tableData">Designed Banners, Products, and other various graphic works, both raster and vector.</td>
+                                </tr>
+                                <tr>
+                                    <td class="tableBoldExp"></td>
+                                    <td class="tableData">Automated repetitive tasks using Javascript and AutoHotkey.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <h2>Computer Skills</h2>
+                        <hr />
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th class="tableBold">Operating Systems:</th>
+                                    <td class="tableData">
+                                        <attr title="I'd just like to interject for a moment. What you’re referring to as Linux, is in fact, GNU/Linux, or as I’ve recently taken to calling it, GNU plus Linux. Linux is not an operating system unto itself, but rather another free component of a fully functioning GNU system made useful by the GNU corelibs, shell utilities and vital system components comprising a full OS as defined by POSIX. Many computer users run a modified version of the GNU system every day, without realizing it. Through a peculiar turn of events, the version of GNU which is widely used today is often called “Linux”, and many of its users are not aware that it is basically the GNU system, developed by the GNU Project. There really is a Linux, and these people are using it, but it is just a part of the system they use. Linux is the kernel: the program in the system that allocates the machine’s resources to the other programs that you run. The kernel is an essential part of an operating system, but useless by itself; it can only function in the context of a complete operating system. Linux is normally used in combination with the GNU operating system: the whole system is basically GNU with Linux added, or GNU/Linux. All the so-called “Linux” distributions are really distributions of GNU/Linux.">GNU/Linux </attr>(With more extensive experience in Arch, Ubuntu and Armbian).</td>
+                                </tr>
+                                <tr>
+                                    <th class="tableBold">Programming Languages:</th>
+                                    <td class="tableData">Ruby, JavaScript (ES6), Bash, C, Python, Java</td>
+                                </tr>
+                                <tr>
+                                    <th class="tableBold">Markup Languages:</th>
+                                    <td class="tableData">HTML, XML, LaTeX</td>
+                                </tr>
+                                <tr>
+                                    <th class="tableBold">Frameworks:</th>
+                                    <td class="tableData">Ruby on Rails, Spring, Glib, Cunit</td>
+                                </tr>
+                                <tr>
+                                    <th class="tableBold">Design &amp; IDE Tools:</th>
+                                    <td class="tableData">Vim, Visual Studio Code</td>
+                                </tr>
+                                <tr>
+                                    <th class="tableBold">Others:</th>
+                                    <td class="tableData">Git, Mercurial, Apache Httpd, PostgreSQL, MySQL, Sqlite, Oracle Database, CSS3, JQuery, Sidekiq, Docker, Platformio</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
+            <div class="page curl-top-left" id="secondPageCv">
+                <p style="page-break-after: always">&nbsp;</p>
+                <p style="page-break-before: always">&nbsp;</p>
+                <div class="CV subpage">
+                    <div>
+                        <h2>Education</h2>
+                        <hr />
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th class="tableBold">2017 - 2019</th>
+                                    <td class="tableData">Software Engineering and Technologies | CTU FEL, Prague</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <h2>Languages</h2>
+                        <hr />
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th class="tableBold">Czech/Slovak:</th>
+                                    <td class="tableData">Native Language</td>
+                                </tr>
+                                <tr>
+                                    <th class="tableBold">English:</th>
+                                    <td class="tableData">Full Professional Proficiency</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <h2>Personal projects</h2>
+                        <hr />
+                        <table class="workSegment">
+                            <tbody>
+                                <tr>
+                                    <th class="tableBoldExp dateDuration">2019</th>
+                                    <td class="tableDataExp">Minesweeper</td>
+                                </tr>
+                                <tr>
+                                    <td class="tableBoldExp"></td>
+                                    <td class="tableData">Fully functional Minesweeper game with extra features. Semestral project at university. I developed my own game related algorithms and wrote the whole css frontend from scratch.</td>
+                                </tr>
+                                <tr>
+                                    <td class="tableBoldExp"></td>
+                                    <td class="tableData">
+                                        <a href="http://martinvavro.com/minesweeper.html" target="_blank">Link</a> /
+                                        <a href="https://gitlab.com/martinvavro/javascript-minesweeper">Repository</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tableBoldExp"></td>
+                                    <td class="tableData">
+                                        <i> Javascript ES6, HTML5, CSS</i>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
 
-            <div>
-              <h2>Interests and Activities</h2>
-              <hr />
-              <table>
-                <tbody>
-                  <tr>
-                    <td class="tableData">Film Photography, Reading, Programming, Linux, Arduino, 3D Printing,</td>
-                  </tr>
-                  <tr>
-                    <td class="tableData">Home automation, Cooking, Graphics, VR</td>
-                  </tr>
-                </tbody>
-              </table>
+                        <table class="workSegment">
+                            <tbody>
+                                <tr>
+                                    <th class="tableBoldExp dateDuration">2019</th>
+                                    <td class="tableDataExp">Accounting Export - Import</td>
+                                </tr>
+                                <tr>
+                                    <td class="tableBoldExp"></td>
+                                    <td class="tableData">
+                                        SPA of invoices export conversion from MoneyS3 to STEREO (MS Dos accounting SW) compatible format. I was playing around with functional programming.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tableBoldExp"></td>
+                                    <td class="tableData">
+                                        <a href="faktura.html" target="_blank">Link</a> /
+                                        <a href="files/javascripts/faktura2.js" target="_blank">Code</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tableBoldExp"></td>
+                                    <td class="tableData">Javascript ES6</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <i>There is some more recent stuff on my  <a href="https://www.github.com/martinvavro/" target="_blank">GitHub</a> albeit unfinished.</i>
+                    </div>
+
+                    <div>
+                        <h2>Interests and Activities</h2>
+                        <hr />
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td class="tableData">Film Photography, Reddit, Programming, Linux, Arduino, Home automation,</td>
+                                </tr>
+                                <tr>
+                                    <td class="tableData">3D Printing (little bit of OpenScad), Cooking, Vector and Raster Graphic design, VR</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
-          </div>
+            <div class="controls">
+                <div class="fullwidth">
+                    <div class="cvButton" id="backCv">
+                        <a>&lt;</a>
+                    </div>
+                    <div class="cvButton" id="downloadCv">
+                        <a>Download PDF</a>
+                    </div>
+                    <div class="cvButton" id="forwardCv">
+                        <a>&gt;</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="controls">
-          <div class="fullwidth">
-            <div class="cvButton" id="backCv">
-              <a>&lt;</a>
-            </div>
-            <div class="cvButton" id="downloadCv">
-              <a>Download PDF</a>
-            </div>
-            <div class="cvButton" id="forwardCv">
-              <a>&gt;</a>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
     <footer class="footer" id="contact">
-      <div class="footerchild">
-        <h4>CONTACT</h4>
-        <div class="icons">
-          <a href="https://www.linkedin.com/in/martin-vavro-4841a384/" target="_blank"><i class="fa fa-linkedin"></i></a>
-          <a href="https://www.facebook.com/vavromartin/" target="_blank"><i class="fa fa-facebook-official"></i></a>
-          <a href="https://www.instagram.com/martinvavro/" target="_blank"><i class="fa fa-instagram"></i></a>
+        <div class="footerchild">
+            <h4>CONTACT</h4>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/martin-vavro-4841a384/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/vavromartin/" target="_blank"><i class="fa fa-facebook-official"></i></a>
+                <a href="https://www.instagram.com/martinvavro/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.github.com/martinvavro/" target="_blank"><i class="fa fa-github"></i></a>
+            </div>
+            <p>
+                <i class="fa fa-envelope left"></i>
+                <a href="mailto:mail@martinvavro.com"> mail@martinvavro.com </a>
+            </p>
+            <p class="credits">created by Martin Vavro 2021</p>
         </div>
-        <p>
-          <i class="fa fa-envelope left"></i>
-          <a href="mailto:mail@martinvavro.com"> mail@martinvavro.com </a>
-        </p>
-        <p class="credits">created by Martin Vavro 2021</p>
-      </div>
     </footer>
-  </body>
+</body>
 
-  <script src="files/javascripts/cv_pagination.js"></script>
-  <script src="files/javascripts/cv_pdf.js"></script>
+<script src="files/javascripts/cv_pagination.js"></script>
+<script src="files/javascripts/cv_pdf.js"></script>
+
 </html>
