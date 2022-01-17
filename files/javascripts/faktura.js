@@ -15,6 +15,7 @@ function buildRow(faktura) {
   zaznam += `'v${getText(faktura, "VarSymbol")}',`;
   zaznam += `'` + eshop + `${getText(faktura, "Doklad")}',`;
   zaznam += "'PZ','prodej zbo" + String.fromCharCode(167, 161) + " - e-shop'," + `1,`;
+  euroRate = getNumber(faktura, "Kurs");
   zaznam += addCurrencyTextPart(faktura);
   zaznam += `'${vystaveno}',`;
   zaznam += `'U',`;
